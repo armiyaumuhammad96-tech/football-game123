@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Penalty Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>⚽ Football Penalty Challenge</h1>
+
+    <div class="score">
+        Score: <span id="score">0</span>
+    </div>
+
+    <div class="game">
+
+        <div class="goal">
+            <div id="goalkeeper">🧤</div>
+        </div>
+
+        <div id="ball">⚽</div>
+
+    </div>
+
+    <h2 id="message">Choose where to shoot!</h2>
+
+    <div class="buttons">
+        <button onclick="shoot('left')">⬅️ Left</button>
+        <button onclick="shoot('center')">⬆️ Center</button>
+        <button onclick="shoot('right')">➡️ Right</button>
+    </div>
+
+    <button class="restart" onclick="restartGame()">🔄 Restart Game</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
